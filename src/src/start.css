@@ -1,0 +1,22 @@
+.menu {
+  background-color: #3b3b3b;
+  margin-top: 100px;
+  width: 100%; }
+
+ul.dws-ul {
+  display: flex;
+  padding: 0;
+  justify-content: center; }
+
+li.dws-li {
+  list-style: none;
+  padding: 10px; }
+
+li.dws-li {
+  list-style: none;
+  padding: 10px; }
+
+li.dws-li a i {
+  margin-right: 10px; }
+
+/*# sourceMappingURL=start.css.map */
