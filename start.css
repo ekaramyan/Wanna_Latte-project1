@@ -11,7 +11,7 @@
 }
 
 .menu {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(133, 80, 43);
   position: fixed; /* Фиксированное положение */
   right: 0px; /* Расстояние от правого края окна браузера */
   top: 0%; /* Расстояние сверху */
@@ -21,7 +21,9 @@
 }
 
 body{
-  background-image: url("../images/escheresque_ste.png");
+  Color: rgb(255, 255, 255);
+    color: rgb(238, 197, 157); /* Цвет текста */
+  background-image: url("../src/img/1.jpg");
   font-family: Verdana;
  }
  ul.dws-ul{
@@ -36,7 +38,7 @@ body{
  li.dws-li a{
   text-decoration: none;
   font-size: 18px;
-  color: rgb(62, 42, 13);
+  color: rgb(241, 224, 202);
   position: relative;
   padding: 5px;
  }
@@ -66,7 +68,7 @@ body{
   mix-blend-mode: multiply;
  }
  li.dws-li:hover{
-  background-color: #c9c9c9;
+  background-color: #e8b574bc;
  }
  li.dws-li:hover a::before{
   width: 50%;
@@ -77,7 +79,7 @@ body{
   transform: translateX(-100%);
  }
  li.dws-li a:hover{
-  color: #fa9828;
+  color: #e7c7b3;
  }
 .backing
 {
