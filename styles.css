@@ -83,5 +83,5 @@ select {
   font-weight: 400;
   Color: rgb(255, 255, 255);
   background: #cab59b url(src/img/1.jpg); /* Цвет фона и путь к файлу */
-    color: #fff; /* Цвет текста */
+    color: #fff; /* Цвет текста*/
 }
