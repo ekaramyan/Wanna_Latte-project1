@@ -24,6 +24,7 @@ body{
   Color: rgb(255, 255, 255);
     color: rgb(238, 197, 157); /* Цвет текста */
   background-image: url("../src/img/1.jpg");
+  background-size: cover;
   font-family: Verdana;
  }
  ul.dws-ul{
@@ -49,7 +50,7 @@ body{
   content: '';
   width: 0;
   height: 3px;
-  background-color: #ce8d47;
+  background-color: #e5bb8f;
   position: absolute;
   top: 90%;
   left: 0;
@@ -60,7 +61,7 @@ body{
   content: '';
   width: 0;
   height: 3px;
-  background-color: #dec756;
+  background-color: #edda7c;
   position: absolute;
   top: 90%;
   right: 0;
