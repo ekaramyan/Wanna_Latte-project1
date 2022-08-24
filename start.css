@@ -1,9 +1,3 @@
-body{
-  Color: rgb(255, 255, 255);
-    color: rgb(238, 197, 157); /* Цвет текста */
-  font-family: Verdana;
- }
-
 .header{
   position: fixed;
   top: 50%;
@@ -26,6 +20,14 @@ body{
   width: 100%;
 }
 
+body{
+  display: block;
+  Color: rgb(255, 255, 255);
+    color: rgb(238, 197, 157); /* Цвет текста */
+  background-image: url("../src/img/1.jpg");
+  background-size: cover;
+  font-family: Verdana;
+ }
  ul.dws-ul{
   display: flex;
   padding: 0;
@@ -70,28 +72,21 @@ body{
  li.dws-li:hover{
   background-color: #e8b574bc;
  }
-
  li.dws-li:hover a::before{
   width: 50%;
   transform: translateX(100%);
  }
-
  li.dws-li:hover a::after{
   width: 50%;
   transform: translateX(-100%);
  }
-
  li.dws-li a:hover{
   color: #e7c7b3;
  }
-
-.front
+.wrapper
 {
-  min-height: 720px;
-  background-image: url("../src/img/1.jpg");
-  background-size: cover;
+  
 }
-
 .title
 {
   font-size: large;
@@ -100,4 +95,22 @@ body{
   color: #e7c7b3;
   text-align: center;
 }
- 
+
+.title__header{
+  text-align: center;
+}
+
+.footer
+{
+  background-color: #a48054;
+  height: 70px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.footer-paragraph
+{
+  font-weight: 300;
+  color: bisque;
+}
