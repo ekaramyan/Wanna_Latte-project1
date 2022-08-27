@@ -1,5 +1,5 @@
 .header{
-  position: fixed;
+   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -16,7 +16,7 @@
   right: 0px; /* Расстояние от правого края окна браузера */
   top: 0%; /* Расстояние сверху */
   padding: 10px; /* Поля вокруг текста */         
-  border: 1px solid rgb(24, 24, 24); /* Параметры рамки */
+  border: 1px solid rgb(154, 117, 71); /* Параметры рамки */
   width: 100%;
 }
 
@@ -35,14 +35,14 @@ body{
  }
  li.dws-li{
   list-style: none;
-  padding: 10px;
+  padding: 5px;
 }
  li.dws-li a{
   text-decoration: none;
-  font-size: 18px;
+  font-size: fit-content;
   color: rgb(241, 224, 202);
   position: relative;
-  padding: 5px;
+  padding: 3px;
  }
  li.dws-li a i{
   margin-right: 10px;
@@ -113,20 +113,18 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 40pt;
   font-weight: 700;
   color: #e7c7b3;
-  text-shadow: #473620;
-
 }
 
 .coffee
 {
   display: flex;
   flex-direction: column;
-  height: 1920px;
+  height: fit-content;
   width: 100%;
-  max-width: 2160px;
+  max-width: fit-content;
   margin: 0 auto;width: 100%;
-  height: 100vh;
-  background: #644520 center no-repeat;
+  padding-bottom: 100px;
+  background: #5a3f1e center no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   
@@ -149,23 +147,46 @@ flex-wrap: wrap;
 }
 .coffee__types__item
 {
-  margin: 10px auto 0;
-  height: 200px;
-  width: 200px;
+  display: flex;
+  justify-content: center;
+  background: #ffffff;
+  overflow: hidden;
+  margin: 15px auto 0;
+  height: fit-content;
+  width: 300px;
   border: #e7c7b3;
-  border-radius: 5px;
-  text-decoration: none;
+  border-radius: 8px;
   text-align: center;
   font-size: 25pt;
-  color: #e5bb8f;
-  flex-shrink: 1;
+  color: #9c6a33;
+  flex-shrink: 2;
   flex-wrap: wrap;
+  position: relative;
+}
+.coffee__types__item:hover img
+{
+  opacity: 0.1;
+}
+.coffee__types__item__about
+{
+  flex-direction: column;
+  color: #9c6a33;
+  text-decoration: none;
+  opacity: 0;
+  font-size: 18pt;
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+.coffee__types__item__about:hover
+{
+  opacity: 1;
 }
 
 
 .footer
 {
-  background-color: #a48054;
+  background-color: #765936;
   height: 70px;
   width: 100%;
   bottom: 0;
@@ -174,6 +195,6 @@ flex-wrap: wrap;
 .footer-paragraph
 {
   font-weight: 300;
-  color: bisque;
+  color: rgb(216, 203, 156);
 }
 
