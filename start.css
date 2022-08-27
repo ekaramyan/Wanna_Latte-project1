@@ -18,6 +18,7 @@
   padding: 10px; /* Поля вокруг текста */         
   border: 1px solid rgb(154, 117, 71); /* Параметры рамки */
   width: 100%;
+  z-index: 2;
 }
 
 body{
@@ -115,21 +116,19 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #e7c7b3;
 }
 
-.coffee
+.container
 {
   display: flex;
   flex-direction: column;
   height: fit-content;
   width: 100%;
-  max-width: fit-content;
-  margin: 0 auto;width: 100%;
+  margin: 0 auto;
   padding-bottom: 100px;
   background: #5a3f1e center no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
-  
 }
-.coffee__about
+.about
 {
   margin-top: 15px;
   font-family: Arial, Helvetica, sans-serif;
@@ -138,7 +137,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
 }
 
-.coffee__types
+.types
 {
 display: flex;
 justify-content: space-between;
@@ -162,6 +161,7 @@ flex-wrap: wrap;
   flex-shrink: 2;
   flex-wrap: wrap;
   position: relative;
+  transition: opacity .3s linear;
 }
 .coffee__types__item:hover img
 {
@@ -177,12 +177,39 @@ flex-wrap: wrap;
   position: absolute;
   top: 0;
   height: 100%;
+  transition: opacity .3s linear;
 }
 .coffee__types__item__about:hover
 {
   opacity: 1;
 }
 
+.table__types__item
+{
+  display: flex;
+  justify-content: center;
+  background: #ffffff;
+  overflow: hidden;
+  margin: 15px auto 0;
+  height: fit-content;
+  width: 300px;
+  border: #e7c7b3;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 25pt;
+  color: #9c6a33;
+  flex-shrink: 2;
+  flex-wrap: wrap;
+  position: relative;
+  transition: opacity .3s linear;
+}
+
+.about__context{
+text-align: center;
+font-size: 18pt;
+font: 500;
+font-family:Arial, Helvetica, sans-serif;
+}
 
 .footer
 {
