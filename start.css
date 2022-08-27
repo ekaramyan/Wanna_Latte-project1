@@ -150,15 +150,18 @@ flex-wrap: wrap;
 .coffee__types__item
 {
   margin: 10px auto 0;
-  height: fit-content;
-  width: fit-content;
+  height: 200px;
+  width: 200px;
   border: #e7c7b3;
   border-radius: 5px;
   text-decoration: none;
+  text-align: center;
+  font-size: 25pt;
   color: #e5bb8f;
   flex-shrink: 1;
   flex-wrap: wrap;
 }
+
 
 .footer
 {
