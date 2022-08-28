@@ -203,8 +203,13 @@ flex-wrap: wrap;
   position: relative;
   transition: opacity .3s linear;
 }
-
-.about__context{
+.table__types__item:hover img
+{
+  transition: opacity .3s linear;
+  opacity: 0.1;
+}
+.about__context
+{
 text-align: center;
 font-size: 18pt;
 font: 500;
