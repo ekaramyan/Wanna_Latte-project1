@@ -255,17 +255,42 @@ font-family:Arial, Helvetica, sans-serif;
 {
   opacity: 1;
 }
+.timetable-types
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 
+}
+.types__timetable
+{
+  margin-left: 1%;
+  width: fit-content;
+  border-radius: 10px;
+  width: 600px;
+  height: fit-content;
+  overflow: hidden;
+}
+.timetable__about
+{
+  font-size: 25pt;
+  font-weight: 600;
+  width: fit-content;
+  justify-content: center;
+
+}
 .footer
 {
   background-color: #765936;
-  height: 70px;
+  height: fit-content;
   width: 100%;
   bottom: 0;
   left: 0;
 }
 .footer-paragraph
 {
+  text-decoration: none;
   font-weight: 300;
   color: rgb(216, 203, 156);
 }
