@@ -105,12 +105,15 @@ body{
 .text
 {
 font-family: Verdana, Geneva, Tahoma, sans-serif;
+justify-content: center;
+text-align: center;
+color: #e7c7b3;
+text-shadow: 5px 1px 1px rgb(141, 79, 41);
+font-size: 20pt;
 }
 
 .text__header
 {
-  justify-content: center;
-  text-align: center;
   font-size: 40pt;
   font-weight: 900;
   color: #e7c7b3;

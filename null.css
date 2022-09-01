@@ -82,6 +82,10 @@ select {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
   Color: rgb(255, 255, 255);
-  background: #cab59b url(src/img/1.jpg); /* Цвет фона и путь к файлу */
+  background: #cab59b; /* Цвет фона и путь к файлу */
     color: #fff; /* Цвет текста*/
+}
+p, a{
+  text-decoration: none;
+  color: #eebfa2;
 }
