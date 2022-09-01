@@ -91,15 +91,15 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-   height: 1920px;
   width: 100%;
   max-width: 2160px;
   margin: 0 auto;width: 100%;
   height: 100vh;
   background: url("../src/img/start/bg.jpg") center no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
-  
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
 }
 
 .text
@@ -114,6 +114,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 40pt;
   font-weight: 900;
   color: #e7c7b3;
+  text-shadow: 10px 1px 1px rgb(121, 75, 47);
 }
 
 .container
@@ -125,8 +126,9 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0 auto;
   padding-bottom: 100px;
   background: #5a3f1e center no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
+  background-position: center;
+  
 }
 .about
 {
