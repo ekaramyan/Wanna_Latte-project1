@@ -92,7 +92,6 @@ body{
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  max-width: 2160px;
   margin: 0 auto;
   height: 100vh;
   background: url(../src/img/start/bg.jpg), center no-repeat;
@@ -102,23 +101,34 @@ body{
   background-attachment: fixed;
 }
 
+.text a
+{
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+letter-spacing: 5px;
+color: #de8a36;
+font-size: 25pt;
+text-shadow: 5px 1px 1px rgb(80, 42, 18);
+}
+.text a:hover
+{
+  transition: color .2s linear;
+  color: #de4f36;
+  text-shadow: 5px 1px 1px rgb(80, 23, 18);
+}
 .text
 {
   z-index: 2;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 justify-content: center;
 text-align: center;
-color: #e7c7b3;
-text-shadow: 5px 1px 1px rgb(141, 79, 41);
-font-size: 20pt;
 }
 
 .text__header
 {
   font-size: 40pt;
   font-weight: 900;
-  color: #e7c7b3;
-  text-shadow: 10px 1px 1px rgb(121, 75, 47);
+  color: #e9cdba;
+  text-shadow: 10px 1px 1px rgb(113, 68, 40);
 }
 
 .container
