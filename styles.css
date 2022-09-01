@@ -18,7 +18,7 @@
   padding: 10px; /* Поля вокруг текста */         
   border: 1px solid rgb(154, 117, 71); /* Параметры рамки */
   width: 100%;
-  z-index: 2;
+  z-index: 3;
 }
 
 body{
@@ -93,17 +93,18 @@ body{
   justify-content: center;
   width: 100%;
   max-width: 2160px;
-  margin: 0 auto;width: 100%;
+  margin: 0 auto;
   height: 100vh;
-  background: url("../src/img/start/bg.jpg") center no-repeat;
+  background: url(../src/img/start/bg.jpg), center no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+
   background-attachment: fixed;
 }
 
 .text
 {
+  z-index: 2;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 justify-content: center;
 text-align: center;
