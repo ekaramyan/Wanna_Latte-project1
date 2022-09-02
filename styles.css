@@ -88,6 +88,7 @@ body{
 
 .container1
 {
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -100,24 +101,33 @@ body{
 
   background-attachment: fixed;
 }
+.parallax__images
+{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%; 
+  height: 100%;
+  z-index: 1;
+}
+.images-parallax__sign
+{
+  position: absolute;
+  width: 100%; 
+  height: 100%;
+  background: url(./src/img/start/sign1.png) top / cover no-repeat;
+}
 
-.text a
-{
-font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-letter-spacing: 5px;
-color: #de8a36;
-font-size: 25pt;
-text-shadow: 5px 1px 1px rgb(80, 42, 18);
+@media(max-aspect-ratio: 3/2){
+  .images-parallax__sign{
+    background-position: 20% top;
+  }
 }
-.text a:hover
-{
-  transition: color .2s linear;
-  color: #de4f36;
-  text-shadow: 5px 1px 1px rgb(80, 23, 18);
-}
+
 .text
 {
-  z-index: 2;
+z-index: 2;
+position: relative;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 justify-content: center;
 text-align: center;
@@ -131,10 +141,27 @@ text-align: center;
   text-shadow: 10px 1px 1px rgb(113, 68, 40);
 }
 
+.text a
+{
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+letter-spacing: 5px;
+color: #de8a36;
+font-size: 25pt;
+text-shadow: 5px 1px 1px rgb(80, 42, 18);
+}
+.text a:hover
+{
+  transition: color .3s linear;
+  color: #de4f36;
+  text-shadow: 5px 1px 1px rgb(80, 23, 18);
+}
+
 .container
 {
+  position: relative;
   display: flex;
   flex-direction: column;
+  line-height: 1;
   height: fit-content;
   width: 100%;
   margin: 0 auto;
@@ -142,8 +169,20 @@ text-align: center;
   background: #5a3f1e center no-repeat;
   background-size: cover;
   background-position: center;
-  
 }
+.container::before
+{
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  transform: translate(0px, -100%);
+  background: linear-gradient(180deg, #5a3f1e00, #5a3f1ec5);
+}
+
 .about
 {
   margin-top: 15px;
@@ -298,7 +337,10 @@ font-family:Arial, Helvetica, sans-serif;
 }
 .footer
 {
-  background-color: #765936;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #4e3516;
   height: fit-content;
   width: 100%;
   bottom: 0;
@@ -308,6 +350,10 @@ font-family:Arial, Helvetica, sans-serif;
 {
   text-decoration: none;
   font-weight: 300;
-  color: rgb(216, 203, 156);
+  color: rgb(202, 164, 124);
 }
-
+.footer-paragraph:hover
+{
+  transition: color .2s;
+  color: #e2caaf;
+}
