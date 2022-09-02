@@ -95,34 +95,52 @@ body{
   width: 100%;
   margin: 0 auto;
   height: 100vh;
-  background: url(../src/img/start/bg.jpg), center no-repeat;
+  /*background: url(../src/img/start/bg.jpg), center no-repeat;*/
   background-size: cover;
   background-position: center;
-
   background-attachment: fixed;
+}
+.parallax__body
+{
+  position: fixed;
+  height: 100vh;
+  width: 100%;
 }
 .parallax__images
 {
   position: absolute;
-  top:0;
-  left:0;
+  top:-10%;
+  left:-10%;
   width: 100%; 
   height: 100%;
   z-index: 1;
+  background-attachment: fixed;
 }
-.images-parallax__sign
+.images-parallax__bg,
+.images-parallax__table,
+.images-parallax__lights
 {
   position: absolute;
-  width: 100%; 
-  height: 100%;
-  background: url(./src/img/start/sign1.png) top / cover no-repeat;
+  width: 120%; 
+  height: 120%;
+  
 }
 
-@media(max-aspect-ratio: 3/2){
-  .images-parallax__sign{
-    background-position: 20% top;
-  }
+
+.images-parallax__bg
+{
+  background: url(./src/img/start/bg1.png) top / cover no-repeat;
 }
+.images-parallax__table
+{
+  background: url(./src/img/start/table.png) top / cover no-repeat;
+}
+.images-parallax__lights
+{
+  background: url(./src/img/start/lights.png) top / cover no-repeat;
+}
+
+
 
 .text
 {
@@ -337,10 +355,12 @@ font-family:Arial, Helvetica, sans-serif;
 }
 .footer
 {
+  z-index: 1;
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: #4e3516;
+  background: #4e3516;
   height: fit-content;
   width: 100%;
   bottom: 0;
