@@ -11,6 +11,9 @@
 }
 
 .menu {
+  display: inline-block;
+  flex-shrink: 1;
+  text-align: center;
   background-color: rgb(133, 80, 43);
   position: fixed; /* Фиксированное положение */
   right: 0px; /* Расстояние от правого края окна браузера */
@@ -24,13 +27,16 @@
 body{
   display: block;
   Color: rgb(255, 255, 255);
-    color: rgb(238, 197, 157); /* Цвет текста */
-  
+  color: rgb(238, 197, 157); /* Цвет текста */
+  font-size: 100%;
   background-size: cover;
   font-family: Verdana;
+  flex-wrap: wrap;
  }
  ul.dws-ul{
   display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
   padding: 0;
   justify-content: center;
  }
