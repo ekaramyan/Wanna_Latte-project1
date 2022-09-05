@@ -202,9 +202,9 @@ text-shadow: 5px 1px 1px rgb(80, 42, 18);
   top: 0;
   left: 0;
   width: 100%;
-  height: 200px;
+  height: 120px;
   transform: translate(0px, -100%);
-  background: linear-gradient(180deg, #5a3f1e00, #5a3f1ec5);
+  background: linear-gradient(180deg, #5a3f1e00, #5a3f1ef6);
 }
 
 .about
