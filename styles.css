@@ -1,3 +1,5 @@
+
+
 .header{
    position: fixed;
   top: 50%;
@@ -383,3 +385,8 @@ font-family:Arial, Helvetica, sans-serif;
   transition: color .2s;
   color: #e2caaf;
 }
+
+
+  :root{
+    scroll-behavior: smooth;
+  }
